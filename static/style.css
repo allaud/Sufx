@@ -1,0 +1,41 @@
+body{background:url("img/retina_wood.png");font-family: Tahoma;}
+a{color: #4096EE;}
+a:hover{color: #f00;}
+#main{background:#fff;border:1px solid #ccc;width: 650px;margin: auto;padding:15px;
+	border-radius: 7px;box-shadow: 0 0 10px #000000;}
+#main .bm{background: url('/static/img/bookmark.png');width:50px;height: 70px;
+	float:left;margin:-24px 0 -5px 0;}
+#main .header{color:#555;font-size: 12px;padding: 5px 0;}
+#main .header a{text-decoration: underline;cursor: pointer;}
+#main .header .panel{float: right;}
+#main .header .panel a{color:#ccc;}
+#main .header .panel a:hover{color:#777;}
+#main .header .panel .button{display:block;float:right;margin:-5px 5px 0 5px;border: 1px solid;
+	background-color: #0074CC;background-image: -moz-linear-gradient(center top , #0088CC, #0055CC);
+	background-image: -webkit-linear-gradient(center top , #0088CC, #0055CC);
+	background-image: -o-linear-gradient(center top , #0088CC, #0055CC);
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);padding: 5px;
+	border-radius: 3px;text-decoration: none;color:#fff;padding: 5px 8px;}
+#main .header .panel .button:hover{color: #FFFF88;}
+
+#main .login{text-align: center;padding: 25px 0;}
+#main .login a{margin: 15px 35px;}
+#main .add{border:1px solid #555;width: 450px;position: absolute;left:460px;top:63px;
+	background: #fff;padding: 10px 0;box-shadow: 0 0 10px 5px rgb(0,0,0);display: none;
+	border-radius: 3px}
+#main .add input,#main .add  textarea{width: 424px;margin:8px 10px;border:1px solid #ccc;
+	border-radius: 3px;padding: 3px;}
+#main .add .error{border: 1px solid red;}
+#main .add .triangle{color: #FFFFFF;position: absolute;right: 25px;text-shadow: 0 -5px 6px #000000;
+	top: -17px;}
+#main .add .add-form, #main .add .login{display: none;}
+#main .add .submit{text-decoration: none;border: 1px solid #ccc;margin: 5px 0px 5px 170px;
+	font-size:11px;border-radius: 3px;width:70px;padding: 5px;text-align: center;}
+#main .add .submit{cursor: pointer;}
+#main .add .submit:hover{background: #eee;}
+.fader{background: #000;opacity:0.8;position: absolute;width: 100%;height: 100%;top:0;left:0;}
+#main .footer{color:#777;font-size: 11px;border-top:1px dotted #ccc;padding: 10px 0 0;}
+#main ul{list-style:armenian outside none;padding: 0 0 0 20px;}
+#main li{font-size: 12px;margin:0 0 15px;}
+#main li span{font-size: 11px;color:#888;}
+.clear{clear: both;}

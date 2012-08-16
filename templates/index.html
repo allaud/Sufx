@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block body %}
+<div id="main">
+	<div class="bm">
+	</div>
+
+	<div class="add">
+		<span class="triangle">▲</span>
+		<div class="add-form tab">
+			<form>
+				<input class="link" placeholder="http://example.com/very/interesting">
+				<textarea class="body" placeholder="Интересно, потому что..."></textarea>
+				<div href="" class="submit">Добавить</div>
+			</form>
+		</div>
+		<div class="login tab">
+			<a href="/login/twitter"><img src="/static/img/social/twitter.png"></a>
+			<a href="/login/google"><img src="/static/img/social/google.png"></a>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+
+	<div class="header">
+		<div class="panel">
+		{% if user_name %}
+			Вы вошли как {{ user_name }} 
+			<a class="button" href="/logout">Выйти</a>
+			<a class="button add-button" class="add-button">Добавить</a>
+		{% else %}
+			<a class="button login-button">Войти</a>
+		{% endif %}
+		</div>
+		<div class="clear"></div>
+	</div>
+	<ul>
+		{% for entry in entry_list %}
+		<li>
+			<a target="_blank" href="{{ entry.link }}">{{ entry.link }}</a>
+			<div>{{ entry.body }} <span>via @{{ entry.author }}</span></div>
+		</li>
+		{% endfor %}
+	</ul>
+	<div class="footer">
+		Flig is a 
+		<a href="http://flask.pocoo.org/" target="_blank">Flask</a> based 
+		<a href="http://en.wikipedia.org/wiki/Linklog">linkblog</a>
+	</div>
+</div>
+{% endblock %}

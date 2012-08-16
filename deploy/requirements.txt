@@ -1,0 +1,12 @@
+Flask==0.9
+Flask-Admin==1.0.1
+Flask-OAuth==0.11
+Flask-SQLAlchemy==0.16
+Flask-WTF==0.8
+Jinja2==2.6
+SQLAlchemy==0.7.8
+WTForms==1.0.1
+Werkzeug==0.8.3
+httplib2==0.7.4
+oauth2==1.5.211
+wsgiref==0.1.2
