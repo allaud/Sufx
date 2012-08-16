@@ -7,7 +7,7 @@ a:hover{color: #f00;}
 	float:left;margin:-24px 0 -5px 0;}
 #main .header{color:#555;font-size: 12px;padding: 5px 0;}
 #main .header a{text-decoration: underline;cursor: pointer;}
-#main .header .panel{float: right;}
+#main .header .panel{float: right;width: 315px;}
 #main .header .panel a{color:#ccc;}
 #main .header .panel a:hover{color:#777;}
 #main .header .panel .button{display:block;float:right;margin:-5px 5px 0 5px;border: 1px solid;
