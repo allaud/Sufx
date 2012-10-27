@@ -15,7 +15,7 @@ def index():
     template_data = {
         'user_name': user_name,
         #'entry_list': Link.query.filter(Link.dt.between(start_dt, end_dt)).all()
-        'entry_list': Link.query.filter().order_by(Link.dt.desc()).limit(30).all()
+        'entry_list': Link.query.filter().order_by(Link.dt.desc()).limit(100).all()
     }
     return render_template('index.html', **template_data)
 
